@@ -4,7 +4,7 @@ import { Search } from "lucide-react"
 
 export const LandingPage = ()=>{
     return(
-        <div className="p-8 text-center lg:w-10/12 2xl:w-9/12  mx-auto flex flex-col items-center justify-center min-h-screen">
+        <div className=" text-center lg:w-10/12 2xl:w-9/12  mx-auto flex flex-col items-center justify-center min-h-screen">
           <div className=" 2xl:w-4/6 lg:w-8/10 text-center mx-auto  space-y-8 py-8">
             <h1 className="text-[30px] lg:text-[52px] font-[monospace] mx-auto w-5/6 ">Trouvez et réservez le logement de vos rêves pour plusieurs mois. </h1>
             <div className="flex space-x-4 items-center justify-center">

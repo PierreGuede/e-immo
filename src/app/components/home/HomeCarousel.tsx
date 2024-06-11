@@ -19,52 +19,57 @@ export function CarouselSize() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
   return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      plugins={[plugin.current]}
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-      className="w-10/12 mx-auto  "
-    >
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-            <Card>
-                <CardContent className="space-y-2 aspect-square items-center justify-center p-2 ">
-                <div className="relative w-full overflow-hidden bg-cover bg-no-repeat">
-                <Image
-                            src="/maison.jpg"
-                            width={800}
-                            height={800}
-                            alt="Picture of the author"
-                            className=' pointer-events-none  transition duration-300 ease-in-out hover:scale-110  mx-auto'
-                />
-                </div>
-                <Link href="#" className="">Chambre à louer dans un appartement de 4 chambres </Link>
-                <div className=" mt-12">
-                
-                <div className="text-sm mt-2 text-gray-700  flex justify-between ">
-                    <span className="w-1/2">Loyer: 45.000 CFA/mois</span>
-                    <span className="w-1/2 text-right">Statut : <span className="text-green-400 text-xs">disponible</span></span>
-                </div>
-                </div>
-                  {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
-                </CardContent>
-                <CardFooter className="flex w-full justify-center ">
-                  <div className="flex space-x-2 items-center text-slate-500 w-1/2"><MapIcon className="h-3 w-3"/> <span>Godomey</span></div>
+    <div className="w-10/12 mx-auto space-y-8">
+      <div>
+        <h1 className="italic underline text-2xl">Les tops derniere publication sur E-immo</h1>
+      </div>
+      <Carousel
+        opts={{
+          align: "start",
+        }}
+        plugins={[plugin.current]}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+        
+      >
+        <CarouselContent>
+          {Array.from({ length: 5 }).map((_, index) => (
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <div className="p-1">
+                <Card>
+                  <CardContent className="space-y-2 aspect-square items-center justify-center p-2 ">
+                    <div className="relative w-full overflow-hidden bg-cover bg-no-repeat">
+                      <Image
+                        src="/maison.jpg"
+                        width={800}
+                        height={800}
+                        alt="Picture of the author"
+                        className=' pointer-events-none  transition duration-300 ease-in-out hover:scale-110  mx-auto'
+                      />
+                    </div>
+                    <Link href="#" className="">Chambre à louer dans un appartement de 4 chambres </Link>
+                    <div className=" mt-12">
+
+                      <div className="text-sm mt-2 text-gray-700  flex justify-between ">
+                        <span className="w-1/2 dark:text-white">Loyer: 45.000 CFA/mois</span>
+                        <span className="w-1/2 text-right dark:text-white">Statut : <span className="text-green-400 text-xs">disponible</span></span>
+                      </div>
+                    </div>
+                    {/* <span className="text-3xl font-semibold">{index + 1}</span> */}
+                  </CardContent>
+                  <CardFooter className="flex w-full justify-center ">
+                    <div className="flex space-x-2 items-center text-slate-500 w-1/2 dark:text-white"><MapIcon className="h-3 w-3" /> <span>Godomey</span></div>
                     {/* <Button variant="outline" className="w-1/2 rounded-none">Learn More</Button> */}
-                    <Link href=""  className=" w-1/2 space-x-2 text-white flex items-center justify-center p-2 rounded-md bg-[#123C3F] text-primary-foreground hover:bg-[#123C3F]/90"> <EyeIcon className="h-4 w-4"/> <span>Visualiser</span></Link>
-                </CardFooter>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+                    <Link href="" className=" w-1/2 space-x-2 text-white flex items-center justify-center p-2 rounded-md bg-[#123C3F] text-primary-foreground hover:bg-[#123C3F]/90"> <EyeIcon className="h-4 w-4" /> <span>Visualiser</span></Link>
+                  </CardFooter>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </div>
   )
 }
