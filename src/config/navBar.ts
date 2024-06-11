@@ -8,16 +8,16 @@ export const NAVLIST = [
     // },
     {
         name: 'Louer',
-        href:"/podcast",
+        href:"/location",
         
     },
     {
         name: 'Appartement',
-        href:"/lives",
+        href:"/appart",
     },
     {
         name: 'Parceles',
-        href:"/blog",
+        href:"/plots",
     },
     
     {

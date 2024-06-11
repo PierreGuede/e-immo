@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "titre": "Maison 3 chambres à Cotonou",
+        "photo": "https://benin-immo.com/immobilier-a-louer-benin/",
+        "lieu": "Cotonou, Littoral, Bénin",
+        "prix_mensuel": 150000, 
+        "disponibilite": true,
+        "statut_verification": "Vérifié par les propriétaires",
+        "caracteristiques": {
+            "type_bien": "Maison",
+            "nombre_chambres": 3,
+            "nombre_salles_de_bain": 2,
+            "surface_habitable": 120, 
+            "cuisine_equipee": true,
+            "parking": true,
+            "climatisation": true,
+            "meubles": true,
+            "animaux_domestiques": true,
+            "jardin": true
+        },
+        "autres_informations": [
+            "Proche des commodités",
+            "Quartier calme et sécurisé",
+            "Idéal pour une famille",
+            "Internet inclus"
+        ]
+    },
+    {
+        "id": 2,
+        "titre": "Appartement 2 chambres à Porto-Novo",
+        "photo": "https://www.benin-immobilier.com/appartements-a-louer-porto-novo/",
+        "lieu": "Porto-Novo, Ouémé, Bénin",
+        "prix_mensuel": 100000, 
+        "disponibilite": false,
+        "statut_verification": "Non vérifié",
+        "caracteristiques": {
+            "type_bien": "Appartement",
+            "nombre_chambres": 2,
+            "nombre_salles_de_bain": 1,
+            "surface_habitable": 80, 
+            "cuisine_equipee": false,
+            "parking": false,
+            "climatisation": false,
+            "meubles": true,
+            "animaux_domestiques": false,
+            "jardin": false
+        },
+        "autres_informations": [
+            "Centre-ville",
+            "Vue sur la mer",
+            "Accès facile aux transports",
+            "Parfait pour un couple"
+        ]
+    },
+    {
+        "id": 3,
+        "titre": "Villa 4 chambres à Parakou",
+        "photo": "https://www.immobilier-benin.net/villas-a-louer-parakou/",
+        "lieu": "Parakou, Borgou, Bénin",
+        "prix_mensuel": 250000, 
+        "disponibilite": true,
+        "statut_verification": "Vérifié par les propriétaires",
+        "caracteristiques": {
+            "type_bien": "Villa",
+            "nombre_chambres": 4,
+            "nombre_salles_de_bain": 3,
+            "surface_habitable": 200, 
+            "cuisine_equipee": true,
+            "parking": true,
+            "climatisation": true,
+            "meubles": true,
+            "animaux_domestiques": true,
+            "piscine": true
+        },
+        "autres_informations": [
+            "Grand jardin",
+            "Quartier résidentiel",
+            "Proche des écoles",
+            "Idéal pour une grande famille"
+        ]
+    }
+]
