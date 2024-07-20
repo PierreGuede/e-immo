@@ -10,6 +10,7 @@ import Communes from "./components/home/CommuneComponent";
 import TestomonialsComponents from "./components/home/TestimonialsComponents";
 import QuestionAccordion from "./components/home/QuestionAccordion";
 import OwnerComponent from "./components/home/OwnerComponent";
+import { FooterComponent } from "@/components/menu/footer/footer";
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { align: 'start' }
   const SLIDE_COUNT = 6
@@ -28,6 +29,7 @@ export default function Home() {
         <QuestionAccordion/>
         <OwnerComponent/>
       </div>
+      <FooterComponent/>
     </div>
   );
 }

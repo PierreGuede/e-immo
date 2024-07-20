@@ -9,12 +9,14 @@ import React from "react";
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, HomeIcon, Verified } from "lucide-react";
-import InfoLocation from "../components/InfoLocation";
+import InfoLocation from "../components/InfoAppart";
 import ChoiceAccordion from "../components/ChoiceAccordion";
 import { Button } from "@/components/ui/ButtonUI";
+import DateCompare from '../components/DateCompare';
+import { CarouselSuggestion } from '../components/CarouselSuggestion';
 import { FooterComponent } from '@/components/menu/footer/footer';
 
-export default function LocatrionID({ params }: { params: { id: number } }) {
+export default function AppartID({ params }: { params: { id: number } }) {
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
     )
@@ -43,12 +45,12 @@ export default function LocatrionID({ params }: { params: { id: number } }) {
                     <hr />
                     <div className="py-8 space-y-4">
                         <div className="space-y-4">
-                            <p className="text-xl font-semibold"> Maison 3 chambres à Cotonou</p>
+                            <p className="text-xl font-semibold"> Appartement Studio à Cotonou</p>
                             <div className="flex space-x-4 ">
-                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Chambre : 3</span>
-                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Cours commune : oui</span>
-                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Salle de bain : 3</span>
-                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Superficie 180m2</span>
+                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Chambre : 1</span>
+                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Cours commune : non</span>
+                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Salle de bain : 1</span>
+                                <span className="text-sm text-gray-800 w-1/4 dark:text-inherit"> Superficie 100m2</span>
                             </div>
                         </div>
                         <div className="flex space-x-4 items-center">
@@ -69,14 +71,24 @@ export default function LocatrionID({ params }: { params: { id: number } }) {
                     </div>
                 </div>
 
-                <div className="w-5/12 p-2 ">
+                <div className="w-5/12 p-2 space-y-4">
+                <div className="rounded-md border-2 py-8">
+                        <DateCompare />
+                        {/* <div className="py-8 text-center">
+                            <Button onClick={() => router.push('/paiement')}>Entammer les procédures de visite</Button>
+                        </div> */}
+                    </div>
                     <div className="rounded-md border-2 py-8">
                         <ChoiceAccordion />
-                        <div className="py-8 text-center">
+                        <div className="py-8 text-center ">
                             <Button onClick={() => router.push('/paiement')} className='dark:text-white'>Entammer les procédures de visite</Button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="w-10/12 mx-auto space-y-12">
+                <h1 className='underline text-2xl font-semibold '>Autre location proposées:</h1>
+                <CarouselSuggestion/>
             </div>
             <FooterComponent/>
         </div>
